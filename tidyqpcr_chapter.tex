@@ -72,6 +72,14 @@ DESeq2, TPM, spike-ins, and normalising genes all have assumptions that can ofte
 
 Modelling errors using Bayesian statistical models and implementing quality experimental design can overcome many issues.
 
+Research questions are getting more specific and naucened whilst data sets are dramatically increaing in sized. 
+
+The demand for statistical analysis has never been higher (chimera project).
+
+The solution to some problems already exist but are poorly implemented (tidyqpcr).
+
+But as we develop new methods (diff frac) we need to learn from the mistakes from previous implementations.
+
 \section{Quantification of mRNA datasets}
 
 \subsection{RNA-seq}
@@ -80,8 +88,6 @@ RNA-Seq analysis consists of three core steps: Quality Control, alignment and co
 Reproducible analysis of RNA-seq data is crucial as software versions, computer systems and servers can all contribute to different outcomes. Using workflow management programs, such as NextFlow, also enable scaleability (analysis of results on a computer to using a university server or cloud service). The analysis steps will be the same but the number of core/input files/ repeats of steps will change mostly without the need of user input. Combining workflow languages with containers: singularity, docker, ect, or environments: conda, renv, ect, and enabling your analysis scripts to be publicly available simultaneously allows you to conduct the same (or similar) analysis in the future and encourages reviewers to actualy confirm you analysis is correct and that there are no issue with QC.
 
 \subsection{qPCR}
-
-Quantitative PCR is among the most common techniques in biological and biomedical research used for the quantification of DNA and RNA. It is considered the gold standard for nucleotide detection and quantification in medicine, legislation and academia. Its prominence has never more apparent than through its use in curtailing the spread of SARS-CoV-2 with a reliable qPCR assay published within 2 weeks of the first release of the SARS-CoV-2 genome \cite{Li2020}. Nevertheless, the widespread usage of qPCR across distinct disciplines has inhibited the education in and implementation of best-practices and quality control. \cite{Bustin2021} From sample preparation to statistical analysis, each stage of a qPCR experiment can be customised to extract information about numerous biological processes. Developing equally versatile and reliable software built with best-practices and using education by documentation it could enable path to overcome the lack of consistency across the disjoint disciplines. 
 
 The basic principle of a polymerase chain reaction consists of the duplication of a region on DNA or RNA that is specified by two short nucleotide sequences, called primers, that are designed to be complementary to the start and the end of the region of interest. A highly thermal tolerant polymerase, adapted from the bacteria \textit{Thermus aquaticus}, is then able to complete the duplication of the region by elongation of the sequence between the two primers \cite{Holland1991}. The PCR polymerase must be thermal tolerant as the duplication step is rapidly repeated by raising the temperature to melt the newly created complementary stand away from the original strand before dropping the temperature back down to enable the next round of elongation. If this cycle is repeated in a solution with surplus concentrations of primers, enzymes, and nucleotides the increase in copies per cycle is bound by an exponential defined only by the number of transcripts of the target sequence in the original sample. Therefore, if the exponential growth of PCR duplicates can be measured and accurately modelled then the original number of transcripts can be inferred. To measure the exponential duplication, Quantitative PCR introduces dyes that only fluoresce when a region has been successfully duplicated. The fluorescence of the sample is measured as the PCR cycle is repeated to determine the exponential growth in duplicates and quantify the number of transcripts of the target sequence in the original sample.
 
@@ -267,6 +273,13 @@ Rich Bowen, Community Manager for the CentOS project,  says "There’s common wi
     \item Including/understanding the pedagogy of software documentation
     \item Resources available on the Turing Way, open life science and Mozilla
 \end{itemize}
+
+\section{Ideas}
+
+Bioinformatics Approaches to Gain Insights into cis-Regulatory Motifs Involved in mRNA Localization %https://link.springer.com/chapter/10.1007/978-3-030-31434-7_7
+
+Localization elements and zip codes in the intracellular transport and localization of messenger RNAs in Saccharomyces cerevisiae
+%https://wires.onlinelibrary.wiley.com/doi/10.1002/wrna.1591
 
 % https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015EA000136 https://f1000research.c 295/v1 https://www.exascaleproject.org/event/softwaredocumentation/ https://elib.dlr.de/147388/
 % https://headrush.typepad.com/creatingpassionateusers/2006/01/crashcour 
